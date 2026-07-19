@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1a30"/><stop offset="1" stop-color="#070c18"/>
+    </linearGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fe3ff"/><stop offset="0.5" stop-color="#8fb4ff"/><stop offset="1" stop-color="#c9a3ff"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="800" height="420" fill="url(#bg)"/>
+  <circle cx="150" cy="90" r="180" fill="#3fb9ff" opacity="0.28" filter="url(#soft)"/>
+  <circle cx="660" cy="360" r="200" fill="#b98cff" opacity="0.26" filter="url(#soft)"/>
+  <circle cx="420" cy="210" r="150" fill="#5bffc4" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- network mesh filling frame -->
+  <g stroke="url(#holo)" stroke-width="1.6" opacity="0.55">
+    <line x1="90" y1="120" x2="250" y2="210"/><line x1="250" y1="210" x2="120" y2="330"/>
+    <line x1="250" y1="210" x2="430" y2="150"/><line x1="430" y1="150" x2="600" y2="230"/>
+    <line x1="430" y1="150" x2="560" y2="330"/><line x1="600" y1="230" x2="720" y2="140"/>
+    <line x1="560" y1="330" x2="720" y2="300"/><line x1="250" y1="210" x2="560" y2="330"/>
+    <line x1="120" y1="330" x2="380" y2="360"/><line x1="380" y1="360" x2="560" y2="330"/>
+  </g>
+  <g>
+    <circle cx="90" cy="120" r="8" fill="#7fe3ff"/><circle cx="90" cy="120" r="15" fill="none" stroke="#7fe3ff" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="250" cy="210" r="11" fill="#8fb4ff"/><circle cx="250" cy="210" r="20" fill="none" stroke="#8fb4ff" stroke-width="1.5" opacity="0.45"/>
+    <circle cx="430" cy="150" r="9" fill="#c9a3ff"/><circle cx="430" cy="150" r="17" fill="none" stroke="#c9a3ff" stroke-width="1.5" opacity="0.45"/>
+    <circle cx="600" cy="230" r="9" fill="#7fe3ff"/>
+    <circle cx="560" cy="330" r="10" fill="#c9a3ff"/><circle cx="560" cy="330" r="18" fill="none" stroke="#c9a3ff" stroke-width="1.5" opacity="0.45"/>
+    <circle cx="720" cy="140" r="7" fill="#8fb4ff"/><circle cx="720" cy="300" r="7" fill="#7fe3ff"/>
+    <circle cx="120" cy="330" r="8" fill="#8fb4ff"/><circle cx="380" cy="360" r="8" fill="#7fe3ff"/>
+  </g>
+
+  <!-- large holographic Kali dragon silhouette (center) -->
+  <g transform="translate(400,210) scale(1.7)" opacity="0.95">
+    <path d="M0 -60 C 26 -70, 66 -52, 60 -14 C 78 -30, 92 -6, 74 14 C 88 6, 92 26, 72 34 C 86 40, 74 60, 54 52
+             C 64 66, 40 74, 30 56 C 40 72, 14 78, 8 56 C 6 78, -20 74, -12 52 C -26 62, -40 44, -26 30
+             C -44 36, -52 14, -34 6 C -50 -2, -44 -26, -22 -22 C -34 -40, -12 -56, 2 -40 C -6 -54, 0 -60, 0 -60 Z"
+      fill="none" stroke="url(#holo)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="34" cy="-30" r="4" fill="#7fe3ff"/>
+  </g>
+
+  <!-- scan sweep line -->
+  <rect x="0" y="205" width="800" height="2.5" fill="#7fe3ff" opacity="0.6"/>
+
+  <!-- corner terminal chip -->
+  <g transform="translate(28,300)" font-family="monospace" font-size="13" opacity="0.92">
+    <text x="0" y="0" fill="#5bffc4">$</text><text x="16" y="0" fill="#cfe6ff">nmap -sV target</text>
+    <text x="0" y="22" fill="#8fb4ff">[+] 22 ssh · 80 http · 443 tls</text>
+  </g>
+
+  <text x="28" y="392" font-family="'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#eaf6ff" opacity="0.85">// penetration testing lab</text>
+</svg>
